@@ -1101,7 +1101,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.184" provider-name="firsttris">
+<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.191" provider-name="firsttris">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -1449,7 +1449,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     </extension>
 </addon>
 
-<addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.13" provider-name="SylvainCecchetto,wwark,joaopa">
+<addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.15" provider-name="SylvainCecchetto,wwark,joaopa">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
@@ -1464,7 +1464,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <email>catch.up.tv.and.more at gmail dot com</email>
     <source>https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore</source>
     <news>
-[Version 1.0.13]
+[Version 1.0.15]
 [Add/Updates] Some new logos and update existing logos
     </news>
     <assets>
