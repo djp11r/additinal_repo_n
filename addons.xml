@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <addons>
+<addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="2.0.1" provider-name="Philipp Temminghoff (phil65),sualfred">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.autocompletion" version="2.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.pluginsource" library="plugin.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</summary>
+        <description lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <source>https://github.com/phil65/plugin.program.autocompletion</source>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshot-03.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.program.autowidget" name="AutoWidget" version="3.2.3" provider-name="drinfernoo">
     <requires>
         <import addon="script.module.kodi-six"/>
@@ -1042,11 +1066,10 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.pov" version="2.12.0" name="POV" provider-name="kodifitzwell">
+<addon id="plugin.video.pov" version="2.13.0" name="POV" provider-name="kodifitzwell">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-        <import addon="script.module.fenomscrapers" version="2.9.0"/>
+        <import addon="script.module.requests"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/pov.py">
         <provides>video</provides>
@@ -1174,7 +1197,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.195" provider-name="firsttris">
+<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.208" provider-name="firsttris">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
