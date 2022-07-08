@@ -1066,7 +1066,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.pov" version="2.14.0" name="POV" provider-name="kodifitzwell">
+<addon id="plugin.video.pov" version="2.15.0" name="POV" provider-name="kodifitzwell">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -1197,7 +1197,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.211" provider-name="firsttris">
+<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.213" provider-name="firsttris">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
