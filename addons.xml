@@ -1066,7 +1066,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.pov" version="2.15.0" name="POV" provider-name="kodifitzwell">
+<addon id="plugin.video.pov" version="2.16.0" name="POV" provider-name="kodifitzwell">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -1134,6 +1134,9 @@ Initial release
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.png</fanart>
+            <screenshot>screen1.png</screenshot>
+            <screenshot>screen2.png</screenshot>
+            <screenshot>screen3.png</screenshot>
         </assets>
     </extension>
 </addon>
@@ -1197,7 +1200,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.215" provider-name="firsttris">
+<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.230" provider-name="firsttris">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -1242,7 +1245,7 @@ Initial release
 
 </addon>
 
-<addon id="plugin.video.sonyliv" version="2.0.11" name="SonyLIV" provider-name="Ajay K">
+<addon id="plugin.video.sonyliv" version="2.0.12" name="SonyLIV" provider-name="Ajay K">
 <requires>
 	<import addon="script.module.six"/>
 	<import addon="script.module.kodi-six"/>
