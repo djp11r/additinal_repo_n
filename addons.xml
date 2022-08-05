@@ -1066,7 +1066,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.pov" version="2.16.0" name="POV" provider-name="kodifitzwell">
+<addon id="plugin.video.pov" version="2.17.0" name="POV" provider-name="kodifitzwell">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -1134,9 +1134,6 @@ Initial release
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.png</fanart>
-            <screenshot>screen1.png</screenshot>
-            <screenshot>screen2.png</screenshot>
-            <screenshot>screen3.png</screenshot>
         </assets>
     </extension>
 </addon>
@@ -1170,7 +1167,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.0.19" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.0.20" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.scrubsv2.artwork"/>
         <import addon="script.module.six"/>
@@ -1200,7 +1197,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.239" provider-name="firsttris">
+<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.243" provider-name="firsttris">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -1408,10 +1405,11 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.ustvgo" version="1.0.0" name="USTVGO" provider-name="Tw1zT3d247's Dev Team">
+<addon id="plugin.video.ustvgo" version="1.0.8" name="USTVGO" provider-name="Parrot Developers">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
   <import addon="script.module.requests" version="2.25.1"/>
+  <import addon="inputstream.adaptive" version="2.3.13"/>
 </requires>
 <extension point="xbmc.python.pluginsource" library="addon.py">
   <provides>video</provides>
@@ -1421,10 +1419,19 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   <description>USTVGO Channels in KODI.</description>
   <disclaimer>Some channels need VPN.</disclaimer>
   <assets>
-    <icon>icon.jpg</icon>
-    <fanart>fanart.jpg</fanart>
+    <icon>icon.png</icon>
   </assets>
-  <news>[1.0.0] Initial version!</news>
+  <news>
+    [1.0.0] Initial version!
+    [1.0.1] Added support for bypassing VPN.
+    [1.0.2] Fixed bypass.
+    [1.0.3] Removed bypass, added channels. I'll fix that bypass different day.
+    [1.0.4] Added best encryption.
+    [1.0.5] Added alternative links.
+    [1.0.6] Fixed addon.
+    [1.0.7] Fixed channels. THX to jaygrizzy#7191 for AE.
+    [1.0.8] Fixed channels.
+  </news>
 </extension>
 </addon>
 
