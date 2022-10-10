@@ -857,6 +857,23 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
     </extension>
 </addon>
 
+<addon id="plugin.video.json_iptv" version="1.0.01" name="Json IPTV" provider-name="JewBMX">
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>IPTV Addon.</summary>
+        <description>json_iptv is a large pile of iptv m3u/m3u8 files collected from various places which have been converted by hand to some simple json lists saved as .py to build quick easy lists in addons or used in this addon lol.(This addon is a slightly modified version of plugin.video.example if anyone is curious.)</description>
+        <license>Free the People!, Free the World!!</license>
+        <platform>all</platform>
+        <assets>
+            <icon>lib/images/icon.png</icon>
+            <fanart>lib/images/fanart.jpg</fanart>
+        </assets>
+        <news>Cleaned Up Some Dupes And Titles.</news>
+    </extension>
+</addon>
+
 <addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.8">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -1170,7 +1187,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.0.22" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.0.23" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.scrubsv2.artwork"/>
         <import addon="script.module.six"/>
@@ -1181,7 +1198,7 @@ Initial release
         <import addon="script.trakt" optional="true"/>
         <import addon="plugin.video.youtube" optional="true"/>
     </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
     <extension library="service.py" point="xbmc.service" start="startup"/>
@@ -1196,7 +1213,7 @@ Initial release
             <fanart>resources/images/fanart.jpg</fanart>
             <screenshot>resources/images/screenshot.png</screenshot>
         </assets>
-        <news>[B] Total CleanUp of Providers [/B]: Checked and Cleaned as of May 2022. [CR][B] Check ChangeLog For More Details. [/B] [CR][B] (Please Report Any Issues To Me Directly By Email Or GitHub.) [/B]</news>
+        <news>[B] Total CleanUp of Providers [/B]: Checked and Cleaned as of Oct. 2022. [CR][B] Check ChangeLog For More Details. [/B] [CR][B] (Please Report Any Issues To Me Directly By Email Or GitHub.) [/B]</news>
     </extension>
 </addon>
 
