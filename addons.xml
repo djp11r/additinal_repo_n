@@ -1488,6 +1488,30 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
+<addon id="plugin.video.tvseriesvideo" name="TVseries.video" version="0.3" provider-name="mbebe">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.resolveurl" version="5.0.00"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">TVseries.video</description>
+        <disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>
+        <summary lang="en">Watch tv shows</summary>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://github.com/mbebe/blomqvist</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.ustvgo" version="1.0.8" name="USTVGO" provider-name="Parrot Developers">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
