@@ -294,7 +294,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.opendevtools" name="OpenDevTools" version="1.5.5" provider-name="drinfernoo">
+<addon id="plugin.program.opendevtools" name="OpenDevTools" version="1.6.0" provider-name="drinfernoo">
 	<requires>
 		<import addon="script.module.dateutil"/>
 		<import addon="script.module.pil"/>
@@ -315,6 +315,11 @@
 			<fanart>fanart.png</fanart>
 		</assets>
 		<news>
+1.6.0
+ - Support plugins in repo subfolders
+ - Fix choosing commit when only one branch exists
+ - Cleanup orphaned files after update
+ - Reload add-on localizations if changed during update
 1.5.5
  - Add release automation via GitHub Actions
 1.5.4
@@ -764,7 +769,7 @@ Designed for low-end devices and Estuary skin.
     </extension>
 </addon>
 
-<addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.37+matrix.1" provider-name="SylvainCecchetto,wwark,joaopa">
+<addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.38+matrix.1" provider-name="SylvainCecchetto,wwark,joaopa">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.codequick" version="0.9.13"/>
@@ -807,9 +812,9 @@ Designed for low-end devices and Estuary skin.
     <email>catch.up.tv.and.more at gmail dot com</email>
     <source>https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore</source>
     <news>
-[Version 0.2.37]
+[Version 0.2.38]
 Changelog is to big for this version (thanks to the hard work of @joaopa00).
-See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releases/tag/v0.2.37 fro the changelog.
+See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releases/tag/v0.2.38 from the changelog.
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -1222,7 +1227,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.0.33" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.0.34" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six"/>
         <import addon="script.module.kodi-six"/>
@@ -1635,7 +1640,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     </extension>
 </addon>
 
-<addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.16" provider-name="SylvainCecchetto,wwark,joaopa">
+<addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.17" provider-name="SylvainCecchetto,wwark,joaopa">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
@@ -1650,7 +1655,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <email>catch.up.tv.and.more at gmail dot com</email>
     <source>https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore</source>
     <news>
-[Version 1.0.16]
+[Version 1.0.17]
 [Add/Updates] Some new logos and update existing logos
     </news>
     <assets>
