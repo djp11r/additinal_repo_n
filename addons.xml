@@ -911,7 +911,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
 </extension>
 </addon>
 
-<addon id="plugin.video.json_iptv" version="1.0.05" name="Json IPTV" provider-name="JewBMX">
+<addon id="plugin.video.json_iptv" version="1.0.08" name="Json IPTV" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six"/>
         <import addon="script.module.kodi-six"/>
@@ -1247,7 +1247,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.13" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.17" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six"/>
         <import addon="script.module.kodi-six"/>
