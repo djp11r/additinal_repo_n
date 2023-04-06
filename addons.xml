@@ -1540,7 +1540,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 </extension>
 </addon>
 
-<addon id="plugin.video.voot" version="2.0.2" name="Voot" provider-name="Ajay K">
+<addon id="plugin.video.voot" version="2.0.9" name="Voot" provider-name="Ajay K">
 <requires>
 	<import addon="script.module.six"/>
 	<import addon="script.module.kodi-six"/>
@@ -1627,13 +1627,14 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     </extension>
 </addon>
 
-<addon id="plugin.video.zee5" name="Zee 5" version="2.1.4" provider-name="Ajay K">
+<addon id="plugin.video.zee5" name="Zee 5" version="2.1.20" provider-name="Ajay K">
     <requires>
 		<import addon="script.module.six"/>
 		<import addon="script.module.kodi-six"/>
-        <import addon="script.module.routing" version="0.2.0"/>
-        <import addon="script.module.requests" version="2.7.0"/>
+		<import addon="script.module.routing" version="0.2.0"/>
+		<import addon="script.module.requests" version="2.7.0"/>
 		<import addon="script.common.plugin.cache" version="2.5.5"/>
+        <import addon="script.module.inputstreamhelper" version="0.5.2"/>
 		<import addon="script.module.web-pdb"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
@@ -1654,8 +1655,8 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
         <news/>
         <disclaimer/>
         <assets>
-            <icon>resources/icon_zee5.jpg</icon>
-            <fanart>resources/fanart_zee5.jpg</fanart>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
