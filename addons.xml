@@ -1247,7 +1247,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.19" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.21" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six"/>
         <import addon="script.module.kodi-six"/>
@@ -1274,7 +1274,7 @@ Initial release
             <fanart>resources/images/fanart.jpg</fanart>
             <screenshot>resources/images/screenshot.png</screenshot>
         </assets>
-        <news>[B] Total CleanUp of Providers [/B]: Checked and Cleaned as of Feb. 2023. [CR][B] Check ChangeLog For More Details. [/B] [CR][B] (Please Report Any Issues To Me Directly By Email Or GitHub.) [/B]</news>
+        <news>Total CleanUp of Providers : Checked and Cleaned as of Feb. 2023. [CR] Check ChangeLog For More Details. [CR] (Please Report Any Issues To Me Directly By Email Or GitHub.)</news>
     </extension>
 </addon>
 
@@ -1461,6 +1461,57 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <summary lang="en_GB">tubitv</summary>
     <description lang="en_GB">Tubi TV has the largest library of FREE videos of hit and cult TV shows and films</description>
     <disclaimer lang="en_GB">Feel free to use this script. For information visit the wiki.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvone" name="tvOne" version="26" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+    <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">tvOne</summary>
+    <description lang="en_gb">tvOne</description>
+    <disclaimer lang="en_gb"/>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvone11" name="tvOne11" version="27+matrix.1" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">tvOne11</summary>
+    <description lang="en_gb">tvOne11</description>
+    <disclaimer lang="en_gb"/>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
+	<assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
@@ -1684,6 +1735,53 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
+</addon>
+
+<addon id="script.adzapper" name="LiveTV Ad-Zapper" version="1.0.2" provider-name="pOpY">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py"/>
+	<extension point="xbmc.service" library="service.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Rezap to current channel after some time (advertisment)</summary>
+		<summary lang="de_DE">Schaltet auf aktuellen Kanal zuruck nach Ablauf einer gewissen Zeit (Werbung)</summary>
+		<summary lang="pl_PL">Powrot do aktualnego kanau po (reklamie) w ustalonym czasie</summary>
+		<description lang="en_GB">Add advertisment skipping to your Kodi system, allowing the user to define a time to switch back to the current channel. During this time the user can switch channel without thinking to switch back manually.</description>
+		<description lang="de_DE">Fugt eine einfache Moglichkeit zu Kodi hinzu, um Werbeblocke zu uberspringen. Der Benutzer kann eine Zeit definieren, nach der automatisch auf den aktuellen Kanal zuruckgeschaltet wird. So verpasst man das Programm nach dem Werbeblock nicht.</description>
+		<description lang="pl_PL">Pomijanie reklam dla Live TV, umozliwiajac uzytkownikowi zdefiniowanie czasu reklamy, aby przeaczyc sie z powrotem na biezacy kana.[CR]W tym czasie mozesz przeaczyc kana bez zastanawiania sie nad recznym przeaczeniem, po okreslonym przez ciebie czasie dodatek sam przeaczy na wczesniej zdefiniowany kana.</description>
+		<language>en de pl</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=329102</forum>
+		<website>https://forum.kodi.tv/showthread.php?tid=329102</website>
+		<source>https://github.com/popy2k14/repo-scripts/tree/matrix/script.adzapper</source>
+		<news>
+[B]- v1.0.2 (2021-02-22)[/B]
+- (en) [new] Added feature to open keymap editor from within addon settings
+- (en) [new] Added polish translation, thx to Atamans
+
+- (de) [new] Feature hinzugefugt um dem Keymap Editor aus den Addon Einstellungen zu offnen
+- (de) [new] Polnische Ubersetzung hinzugefugt, Danke an Atamans
+
+- (pl) [nowosc] Dodano funkcje otwierania edytora klawiszy z poziomu ustawien dodatku
+- (pl) [nowosc] Dodano polskie tumaczenie, dzieki dla Atamans
+
+[B]- v1.0.1 (2021-02-20)[/B]
+- (en) Update to python 3 for kodi matrix
+
+- (de) Update zu python 3 fur Kodi Matrix
+
+- (pl) Aktualizacja do Pythona 3 dla Kodi Matrix
+		</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<banner>resources/banner.jpg</banner>
+			<clearlogo>resources/logo.png</clearlogo>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="script.language-convert" name="Language Convert" version="0.1.3" provider-name="ronie">
@@ -2078,7 +2176,7 @@ v0.5.9 (2022-03-22)
   </extension>
 </addon>
 
-<addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="4.0.7">
+<addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="4.0.8">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.22.0"/>
@@ -2094,7 +2192,9 @@ v0.5.9 (2022-03-22)
         <forum>https://forum.kodi.tv/showthread.php?tid=247163</forum>
         <source>https://github.com/learningit/repo-scripts&gt;</source>
         <language>en</language>
-        <news>v4.0.7 - fix tv listings for live stream addons</news>
+        <news>
+            v4.0.8 - made compatible to Kodi 20 Nexus
+            v4.0.7 - fix tv listings for live stream addons</news>
         <assets>
             <icon>resources/icon.png</icon>
         </assets>
