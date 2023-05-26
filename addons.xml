@@ -911,7 +911,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
 </extension>
 </addon>
 
-<addon id="plugin.video.json_iptv" version="1.0.08" name="Json IPTV" provider-name="JewBMX">
+<addon id="plugin.video.json_iptv" version="1.0.09" name="Json IPTV" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six"/>
         <import addon="script.module.kodi-six"/>
@@ -1247,7 +1247,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.25" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.28" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six"/>
         <import addon="script.module.kodi-six"/>
@@ -2362,6 +2362,39 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
         <website/>
         <email/>
         <assets/>
+    </extension>
+</addon>
+
+<addon id="service.subskip" name="SubSkip" version="0.0.5" provider-name="drinfernoo">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+        <import addon="script.module.pymysql"/>
+		<import addon="script.service.a4ksubtitles" optional="true"/>
+    </requires>
+
+    <extension point="xbmc.python.script" library="main.py"/>
+    <extension point="xbmc.python.pluginsource" library="test.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Skip intros for TV Shows.</summary>
+        <description lang="en_GB"/>
+        <language/>
+        <platform>all</platform>
+        <license>Apache-2.0</license>
+        <forum/>
+        <website>https://github.com/drinfernoo</website>
+        <email>drinfernoo@yahoo.com</email>
+        <source/>
+        <news/>
+        <disclaimer/>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
     </extension>
 </addon>
 </addons>
