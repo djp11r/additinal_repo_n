@@ -1277,7 +1277,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.523" provider-name="firsttris">
+<addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.524" provider-name="firsttris">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.inputstreamhelper" version="0.4.2"/>
@@ -1464,7 +1464,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone" name="tvOne" version="26" provider-name="RACC">
+<addon id="plugin.video.tvone" name="tvOne" version="26.1.0" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
@@ -1478,19 +1478,19 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
     <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="en_gb">tvOne</summary>
-    <description lang="en_gb">tvOne</description>
+    <summary lang="en_gb">tvtap</summary>
+    <description lang="en_gb">tvOne aka tvtap[CR]Updated August 2023</description>
     <disclaimer lang="en_gb"/>
     <platform>all</platform>
     <license>GPL-3.0</license>
     <assets>
         <icon>icon.png</icon>
-        <fanart>fanart.png</fanart>
+        <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone11" name="tvOne11" version="27+matrix.1" provider-name="RACC">
+<addon id="plugin.video.tvone11" name="tvOne11" version="28.0.0" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests"/>
@@ -1503,12 +1503,12 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="en_gb">tvOne11</summary>
-    <description lang="en_gb">tvOne11</description>
+    <summary lang="en_gb">Swift Streamz</summary>
+    <description lang="en_gb">tvOne11 aka Swift Streamz[CR]Version updated August 2023</description>
     <disclaimer lang="en_gb"/>
     <platform>all</platform>
     <license>GPL-3.0</license>
-	<assets>
+    <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
     </assets>
@@ -1883,6 +1883,25 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     </extension>
 </addon>
 
+<addon id="script.module.feedparser" name="feedparser" version="6.0.2" provider-name="Kurt McKee">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.sgmllib3k" version="1.0.0+matrix.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <summary lang="en_GB">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</summary>
+        <description lang="en_GB">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</description>
+        <license>MIT</license>
+        <platform>all</platform>
+        <source>https://github.com/kurtmckee/feedparser</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="script.module.html5lib" name="html5lib-python" version="1.1.0+matrix.1" provider-name="html5lib">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -2017,22 +2036,40 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     </extension>
 </addon>
 
-<addon id="script.module.pytz" name="pytz" version="2021.3.0+matrix.1" provider-name="Stuart Bishop, Paul Backhouse">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
-	<extension point="xbmc.addon.metadata">
-	    <summary lang="en_GB">World Timezone Definitions for Python.</summary>
-	    <description lang="en_GB">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
-	    <platform>all</platform>
-	    <license>MIT</license>
-	    <website>https://pythonhosted.org/pytz/</website>
-	    <source>https://github.com/stub42/pytz</source>
-	    <assets>
+<addon id="script.module.pytz" name="pytz" version="2023.3.0+matrix.1" provider-name="Stuart Bishop">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">World Timezone Definitions for Python.</summary>
+    <description lang="en_GB">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>https://pythonhosted.org/pytz/</website>
+    <source>https://github.com/stub42/pytz</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.sgmllib3k" name="sgmllib3k" version="1.0.0+matrix.2" provider-name="hsoft">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <summary lang="en_GB">Python 3 port of sgmllib</summary>
+        <description lang="en_GB">Python 3 port of sgmllib</description>
+        <license>BSD-1-Clause	</license>
+        <platform>all</platform>
+        <source>https://pypi.org/project/sgmllib3k/</source>
+        <assets>
             <icon>icon.png</icon>
-	    </assets>
-	</extension>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="script.module.simple.downloader" name="Simple Downloader for xbmc plugins" provider-name="TheCollective" version="1.9.5">
@@ -2232,6 +2269,27 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
       <icon>resources/icon.png</icon>
     </assets>
   </extension>
+</addon>
+
+<addon id="script.module.yt-dlp" name="yt-dlp" version="2023.07.06-1" provider-name="yt-dlp contributors">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+    </requires>
+
+    <extension point="xbmc.python.module" library="lib"/>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">A youtube-dl fork with additional features and patches</summary>
+        <description lang="en_GB">yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project</description>
+        <license>Unlicense</license>
+        <platform>all</platform>
+        <source>https://github.com/yt-dlp/yt-dlp</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+
 </addon>
 
 <addon id="script.settings-convert" name="Settings Convert" version="0.0.12" provider-name="ronie">
