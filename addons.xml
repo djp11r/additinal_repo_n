@@ -1964,23 +1964,23 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 	</extension>
 </addon>
 
-<addon id="script.module.feedparser" name="feedparser" version="6.0.2" provider-name="Kurt McKee">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.sgmllib3k" version="1.0.0+matrix.1"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-        <language/>
-        <summary lang="en_GB">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</summary>
-        <description lang="en_GB">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</description>
-        <license>MIT</license>
-        <platform>all</platform>
-        <source>https://github.com/kurtmckee/feedparser</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
+<addon id="script.module.feedparser" name="feedparser" version="6.0.11" provider-name="Kurt McKee">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.sgmllib3k" version="1.0.0+matrix.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</summary>
+    <description lang="en_GB">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</description>
+    <license>BSD-2-Clause</license>
+    <platform>all</platform>
+    <website>https://github.com/kurtmckee/feedparser</website>
+    <source>https://github.com/kurtmckee/feedparser</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="script.module.html5lib" name="html5lib-python" version="1.1.0+matrix.1" provider-name="html5lib">
@@ -2368,6 +2368,24 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     <email>freso.dk AT gmail.com</email>
     <assets>
       <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.webencodings" name="webencodings" version="0.5.1+matrix.2" provider-name="gsneller">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">This is a Python implementation of the WHATWG Encoding standard.</summary>
+    <description lang="en_GB">This module has encoding labels and BOM detection, but the actual implementation for encoders and decoders is Pythons.</description>
+    <platform>all</platform>
+    <license>BSD-1-Clause</license>
+    <source>https://github.com/gsnedders/python-webencodings</source>
+    <website>https://pythonhosted.org/webencodings/</website>
+    <assets>
+      <icon>icon.png</icon>
     </assets>
   </extension>
 </addon>
