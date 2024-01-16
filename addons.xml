@@ -828,7 +828,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.2" provider-name="dEXE, THE CREW, mbebe">
+<addon id="plugin.video.daddylive" name="Daddylive" version="2.8" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -839,10 +839,14 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">DaddyLiveHD - Live TV and Sports</summary>
-        <description lang="en">Live Streamed Channels and Scheduled Sporting Events.[CR][CR]Multiple sources/streams works in Matrix, Nexus and Omega.</description>
-        <disclaimer lang="en">daddylivehd.com</disclaimer>
-        <language>en</language>
+        <description lang="pl">1.2</description>
+        <disclaimer lang="pl">test
+        </disclaimer>
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports</description>
+        <disclaimer lang="en">test
+        </disclaimer>
+        <language>pl</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <website/>
@@ -1272,7 +1276,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.38" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.39" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six"/>
         <import addon="script.module.kodi-six"/>
@@ -1298,7 +1302,7 @@ Initial release
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
         </assets>
-        <news>Total CleanUp of Providers : Checked and Cleaned as of June 2023. [CR] Check ChangeLog For More Details. [CR] (Please Report Any Issues To Me Directly By Email Or GitHub.)</news>
+        <news>Total CleanUp of Providers : Checked and Cleaned as of June 2023. [CR] Check ChangeLog For More Details.</news>
     </extension>
 </addon>
 
@@ -1540,7 +1544,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone111" name="tvOne111" version="24.0.1" provider-name="RACC">
+<addon id="plugin.video.tvone111" name="tvOne111" version="25.0.0" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
@@ -1556,7 +1560,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en_gb">RedBox TV</summary>
-    <description lang="en_gb">tvOne111 aka RedBox TV Live[CR]Updated 2021</description>
+    <description lang="en_gb">tvOne111 aka RedBox TV Live[CR]Updated 2024</description>
     <disclaimer lang="en_gb"/>
     <platform>all</platform>
     <license>GPL-3.0-only</license>
@@ -1596,6 +1600,33 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvone112" name="tvOne112" version="3.0.1" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.module.pyamf"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">RStv</summary>
+    <description lang="en_gb">tvOne112 aka RStv[CR]Updated July 2023</description>
+    <disclaimer lang="en_gb"/>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
 </addon>
