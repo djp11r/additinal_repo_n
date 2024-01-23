@@ -828,7 +828,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="2.8" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.2" provider-name="JP">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -1519,31 +1519,6 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone11" name="tvOne11" version="28.0.0" provider-name="RACC">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.kodi-six"/>
-    <import addon="script.module.future"/>
-    <import addon="script.module.routing"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="en_gb">Swift Streamz</summary>
-    <description lang="en_gb">tvOne11 aka Swift Streamz[CR]Version updated August 2023</description>
-    <disclaimer lang="en_gb"/>
-    <platform>all</platform>
-    <license>GPL-3.0</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="plugin.video.tvone111" name="tvOne111" version="25.0.0" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -1993,6 +1968,25 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 			<icon>icon.png</icon>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="script.module.dnspython" name="DNS Python" version="1.12.1" provider-name="dnspython">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+	<summary>A Pure Python DNS module</summary>
+	<description>A Pure Python DNS module</description>
+	<disclaimer lang="en"/>
+	<language>en</language>
+    <platform>all</platform>
+	<license>BSD-style license</license>
+	<forum/>
+	<website>http://www.dnspython.org/</website>
+	<email/>
+	<source>https://github.com/Arias800/script.module.dnspython/</source>
+  </extension>
 </addon>
 
 <addon id="script.module.feedparser" name="feedparser" version="6.0.11" provider-name="Kurt McKee">
