@@ -920,6 +920,32 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
     </extension>
 </addon>
 
+<addon id="plugin.video.gratis" name="Gratis" version="1.4.5" provider-name="X">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Come here for the latest.</summary>
+		<description lang="en_GB">Merriam-Webster definition of GRATIS: without charge or recompense : FREE!!!</description>
+		<platform>all</platform>
+		<license>GPL-3.0-or-later</license>
+		<website/>
+		<source/>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="plugin.video.iptv.archive.downloader" version="0.8.3" name="IPTV Archive Downloader" provider-name="tbrek">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
