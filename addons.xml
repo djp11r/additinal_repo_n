@@ -2452,7 +2452,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
   </extension>
 </addon>
 
-<addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="4.0.8">
+<addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="4.0.9">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.22.0"/>
@@ -2468,9 +2468,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
         <forum>https://forum.kodi.tv/showthread.php?tid=247163</forum>
         <source>https://github.com/learningit/repo-scripts&gt;</source>
         <language>en</language>
-        <news>
-            v4.0.8 - made compatible to Kodi 20 Nexus
-            v4.0.7 - fix tv listings for live stream addons</news>
+        <news>v4.0.8 - fixes for Nexus</news>
         <assets>
             <icon>resources/icon.png</icon>
         </assets>
@@ -2494,6 +2492,24 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
+</addon>
+
+<addon id="script.module.tls_client" name="tls_client" version="1.0.1" provider-name="tls_client">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Tls-Client is a powerful, user-friendly HTTP client for Python</summary>
+    <description lang="en_GB">Tls-Clien is a powerful, user-friendly HTTP client for Python.</description>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>https://github.com/FlorianREGAZ/Python-Tls-Client</website>
+    <source>https://github.com/FlorianREGAZ/Python-Tls-Client</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="script.module.tzdata" name="tzdata" version="2021.5" provider-name="pganssle">
