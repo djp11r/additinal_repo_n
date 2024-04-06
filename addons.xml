@@ -1655,11 +1655,12 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone" name="tvOne" version="26.1.0" provider-name="RACC">
+<addon id="plugin.video.tvone" name="tvOne" version="1.0.0" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
     <import addon="script.module.requests"/>
+    <import addon="script.module.peewee"/>
     <import addon="script.module.kodi-six"/>
     <import addon="script.module.future"/>
     <import addon="script.module.routing"/>
@@ -1681,11 +1682,12 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone111" name="tvOne111" version="25.0.0" provider-name="RACC">
+<addon id="plugin.video.tvone111" name="tvOne111" version="1.0.0" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
     <import addon="script.module.pyamf"/>
+    <import addon="script.module.peewee"/>
     <import addon="script.module.kodi-six"/>
     <import addon="script.module.future"/>
     <import addon="script.module.requests"/>
@@ -1708,12 +1710,13 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone1112" name="tvOne1112" version="111.0.1" provider-name="RACC">
+<addon id="plugin.video.tvone1112" name="tvOne1112" version="1.0.0" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
     <import addon="script.module.dateutil"/>
     <import addon="script.module.pyamf"/>
+    <import addon="script.module.peewee"/>
     <import addon="script.module.kodi-six"/>
     <import addon="script.module.future"/>
     <import addon="script.module.requests"/>
@@ -1741,11 +1744,12 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone112" name="tvOne112" version="3.0.1" provider-name="RACC">
+<addon id="plugin.video.tvone112" name="tvOne112" version="1.0.0" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
     <import addon="script.module.pyamf"/>
+    <import addon="script.module.peewee"/>
     <import addon="script.module.kodi-six"/>
     <import addon="script.module.future"/>
     <import addon="script.module.requests"/>
@@ -2275,6 +2279,24 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
         <source>https://github.com/HenrikDK/xbmc-common-plugin-functions</source>
         <language/>
    </extension>
+</addon>
+
+<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.1">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Python wrapper for peewee</summary>
+    <description lang="en_GB">Python wrapper for peewee</description>
+    <license>GPL-3.0-or-later</license>
+    <website>https://github.com/coleifer/peewee</website>
+    <source>https://github.com/coleifer/peewee</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="script.module.pil" name="Python Image Library" version="1.1.7" provider-name="PythonWare">
