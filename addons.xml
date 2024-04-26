@@ -828,7 +828,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.2" provider-name="JP">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.3" provider-name="JP">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -2579,18 +2579,18 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     </extension>
 </addon>
 
-<addon id="script.module.urllib3" name="urllib3" version="1.25.6" provider-name="Andrey Petrov">
+<addon id="script.module.urllib3" name="urllib3" version="2.1.0" provider-name="urllib3">
   <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">HTTP library with thread-safe connection pooling, file post, and more.</summary>
-    <description lang="en_GB">Packed for KODI from https://pypi.org/project/urllib3/</description>
+    <summary lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python</summary>
+    <description lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries</description>
     <license>MIT</license>
-    <website>https://urllib3.readthedocs.io/en/latest/</website>
+    <platform>all</platform>
+    <website>https://urllib3.readthedocs.io/</website>
     <source>https://github.com/urllib3/urllib3</source>
-    <email>freso.dk AT gmail.com</email>
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
