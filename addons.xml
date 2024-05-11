@@ -1605,6 +1605,30 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     </extension>
 </addon>
 
+<addon id="plugin.video.thetvapp" name="The_TV_app" version="0.11" provider-name="xxxxxx">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">https://thetvapp.to</description>
+        <disclaimer lang="en">https://thetvapp.to</disclaimer>
+        <summary lang="en">https://thetvapp.to</summary>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://thetvapp.to</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.tubi.m7" name="Tubi" provider-name="mhancoc7" version="0.2.0">
     <requires>
         <import addon="script.module.m7lib" version="0.1.0"/>
@@ -1626,9 +1650,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     </extension>
 </addon>
 
-<addon id="plugin.video.tubitv" name="TubiTV" version="5.0.3" provider-name="Lunatixz">
+<addon id="plugin.video.tubitv" name="TubiTV" version="5.0.4" provider-name="Lunatixz,WonkoDerp,Liqianyu">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.module.t1mlib" version="4.0.2"/>
     <import addon="script.module.requests" version="2.22.0"/>
     <import addon="inputstream.adaptive" version="2.6.0"/>
@@ -1639,19 +1663,19 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
   <extension point="xbmc.service" library="pseudotv_recommended.py"/>
   <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">tubitv</summary>
+    <description lang="en_GB">Tubi TV has the largest library of FREE videos of hit and cult TV shows and films</description>
+    <disclaimer lang="en_GB">Feel free to use this script. For information visit the wiki.</disclaimer>
     <platform>all</platform>
     <language>en</language>
     <license>GPL-2.0-or-later</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=</forum>
     <website>http://www.tubitv.com/</website>
-    <news>v.5.0.1[CR]PseudoTV Live support</news>
+    <news>v.5.0.2[CR]Workaround Fix Login</news>
     <assets>
         <icon>resources/images/icon.png</icon>
         <fanart>resources/images/fanart.jpg</fanart>
     </assets>
-    <summary lang="en_GB">tubitv</summary>
-    <description lang="en_GB">Tubi TV has the largest library of FREE videos of hit and cult TV shows and films</description>
-    <disclaimer lang="en_GB">Feel free to use this script. For information visit the wiki.</disclaimer>
   </extension>
 </addon>
 
@@ -2281,7 +2305,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
    </extension>
 </addon>
 
-<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.1">
+<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.2">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
