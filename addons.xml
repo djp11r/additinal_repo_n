@@ -738,6 +738,32 @@ Designed for low-end devices and Estuary skin.
     </extension>
 </addon>
 
+<addon id="plugin.video.bolly2tolly" name="Bolly 2 tolly" version="0.1" provider-name="mbebe">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.inputstreamhelper" version="0.3.3"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.six"/>
+		<import addon="script.module.resolveurl" version="5.0.00"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<description lang="en">Bolly 2 tolly</description>
+		<disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>
+		<summary lang="en">Bolly 2 tolly</summary>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<website>https://github.com/mbebe/blomqvist</website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="plugin.video.botallen.hotstar" name="Disney+ Hotstar" provider-name="botallen" version="0.0.29">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
@@ -828,7 +854,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.3" provider-name="JP">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.4" provider-name="JP">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -1605,7 +1631,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     </extension>
 </addon>
 
-<addon id="plugin.video.thetvapp" name="The_TV_app" version="0.11" provider-name="xxxxxx">
+<addon id="plugin.video.thetvapp" name="The TVapp" version="0.11" provider-name="xxxxxx">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -1618,7 +1644,6 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
         <description lang="en">https://thetvapp.to</description>
         <disclaimer lang="en">https://thetvapp.to</disclaimer>
         <summary lang="en">https://thetvapp.to</summary>
-        <language>en</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <website>https://thetvapp.to</website>
@@ -2252,6 +2277,37 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
           <icon>icon.png</icon>
         </assets>
    </extension>
+</addon>
+
+<addon id="script.module.libka" name="Libka Library Module" version="0.0.25" provider-name="libka team">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.urllib3"/>
+		<import addon="script.skin.helper.colorpicker"/>
+		<import addon="script.module.pil"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.library" library="lib/main.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Helper framework for Kodi Addons</summary>
+		<summary lang="pl_PL">Biblioteka dla dodatkow Kodi</summary>
+		<platform>all</platform>
+		<license>MIT</license>
+		<source>https://github.com/libka-pl/libka/script.module.libka</source>
+		<news>v0.0.25
+- formating
+- multi-storage
+- cache
+- refactor and fixes
+- a lot of fixes
+v0.0.17
+- Support for Python 3.7.
+v0.0.15
+- Fix RawArgs.
+v0.0.14
+- Fix stroage (and search) save for Windows.</news>
+	</extension>
 </addon>
 
 <addon id="script.module.m3u8" name="m3u8" version="0.5.4+matrix.2" provider-name="Globo.com">
