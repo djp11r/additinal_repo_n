@@ -854,7 +854,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.4" provider-name="JP">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.5" provider-name="JP">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -1464,7 +1464,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.39" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.40" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six"/>
         <import addon="script.module.kodi-six"/>
@@ -1490,7 +1490,7 @@ Initial release
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
         </assets>
-        <news>Total CleanUp of Providers : Checked and Cleaned as of June 2023. [CR] Check ChangeLog For More Details.</news>
+        <news>Total CleanUp of Providers : Checked and Cleaned as of July 2024. [CR] Check ChangeLog For More Details.</news>
     </extension>
 </addon>
 
@@ -2279,6 +2279,37 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
    </extension>
 </addon>
 
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.1.01" provider-name="THE TEAM">
+	<requires>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="script.module.dateutil"/>
+		<import addon="script.module.soupsieve"/>
+		<import addon="script.module.pyairtable"/>
+		<import addon="script.module.pyamf"/>
+		<import addon="script.module.pycryptodome" optional="true"/>
+		<import addon="script.module.pyjsparser"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Jet Extractors</summary>
+		<description lang="en">Jet Extractors</description>
+		<disclaimer lang="en"/>
+		<license>MIT</license>
+		<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<!-- ########################################### -->
+<!-- #     GIVE CREDIT WHERE CREDIT IS DUE     # -->
+<!-- #                                         # -->
+<!-- #      THE TEAM JETEXTRACTOR              # -->
+<!-- ########################################### -->
+
 <addon id="script.module.libka" name="Libka Library Module" version="0.0.25" provider-name="libka team">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -2386,6 +2417,25 @@ v0.0.14
   <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.pyairtable" name="pyairtable" version="1.4.0">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python Client for the Airtable API</summary>
+    <description lang="en_GB">Python Client for the Airtable API</description>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>https://pyairtable.readthedocs.io/</website>
+    <source>https://github.com/gtalarico/pyairtable</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
