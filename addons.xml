@@ -854,7 +854,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.5" provider-name="JP">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.6" provider-name="JP">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -2944,6 +2944,29 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
         <assets>
             <icon>icon.png</icon>
         </assets>
+    </extension>
+</addon>
+
+<addon id="service.subtitles.addic7ed" name="Addic7ed.com" version="7.1.4" provider-name="gujal">
+    <requires>
+        <!-- <import addon="xbmc.python" version="2.24.0"/> -->
+        <import addon="script.module.six"/>
+        <import addon="script.module.kodi-six"/>
+        <import addon="script.module.requests" version="2.4.3"/>
+        <import addon="script.module.beautifulsoup4" version="4.0.0"/>
+    </requires>
+    <extension point="xbmc.subtitle.module" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Get subtitles from Addic7ed.com</summary>
+        <description lang="en">Description for Addic7ed to come</description>
+        <disclaimer lang="en"/>
+        <platform>all</platform>
+        <language/>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=184854</forum>
+        <website/>
+        <email/>
+        <source>https://github.com/cflannagan/service.subtitles.addic7ed</source>
     </extension>
 </addon>
 </addons>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.5" provider-name="JP">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.6" provider-name="JP">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
