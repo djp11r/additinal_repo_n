@@ -1704,7 +1704,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone" name="tvOne" version="1.0.1" provider-name="RACC">
+<addon id="plugin.video.tvone" name="tvOne" version="1.0.2" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
@@ -1731,7 +1731,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone111" name="tvOne111" version="1.0.1" provider-name="RACC">
+<addon id="plugin.video.tvone111" name="tvOne111" version="1.0.2" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
@@ -1759,7 +1759,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone1112" name="tvOne1112" version="1.0.1" provider-name="RACC">
+<addon id="plugin.video.tvone1112" name="tvOne1112" version="1.0.2" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pycryptodome"/>
@@ -2392,7 +2392,7 @@ v0.0.14
    </extension>
 </addon>
 
-<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.3">
+<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.4">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -2407,6 +2407,7 @@ v0.0.14
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
+    <news>v3.17.7 from origin</news>
   </extension>
 </addon>
 
