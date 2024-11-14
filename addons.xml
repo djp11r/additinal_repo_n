@@ -2392,7 +2392,7 @@ v0.0.14
    </extension>
 </addon>
 
-<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.4">
+<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.5">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
