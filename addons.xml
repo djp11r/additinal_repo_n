@@ -854,7 +854,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.8" provider-name="JP">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.9" provider-name="JP">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -2392,7 +2392,7 @@ v0.0.14
    </extension>
 </addon>
 
-<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.5">
+<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.6">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
