@@ -854,7 +854,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.91" provider-name="JP">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.93" provider-name="JP">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests"/>
@@ -2392,25 +2392,6 @@ v0.0.14
    </extension>
 </addon>
 
-<addon id="script.module.peewee" name="peewee" provider-name="coleifer" version="0.0.6">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Python wrapper for peewee</summary>
-    <description lang="en_GB">Python wrapper for peewee</description>
-    <license>GPL-3.0-or-later</license>
-    <website>https://github.com/coleifer/peewee</website>
-    <source>https://github.com/coleifer/peewee</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-    <news>v3.17.7 from origin</news>
-  </extension>
-</addon>
-
 <addon id="script.module.pil" name="Python Image Library" version="1.1.7" provider-name="PythonWare">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2659,24 +2640,6 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     <platform>all</platform>
     <website>https://github.com/FlorianREGAZ/Python-Tls-Client</website>
     <source>https://github.com/FlorianREGAZ/Python-Tls-Client</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="script.module.tzdata" name="tzdata" version="2021.5" provider-name="pganssle">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">zic-compiled binaries for the IANA time zone database</summary>
-    <description lang="en_GB">tzdata is intended to be a fallback for systems that do not have system time zone data installed.</description>
-    <platform>all</platform>
-    <license>Apache-2.0</license>
-    <website>https://pypi.org/project/tzdata/</website>
-    <source>https://github.com/python/tzdata</source>
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
