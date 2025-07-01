@@ -2,16 +2,16 @@
 <addons>
 <addon id="plugin.program.autowidget" name="AutoWidget" version="3.2.3" provider-name="drinfernoo">
     <requires>
-        <import addon="script.module.kodi-six"/>
-        <import addon="script.module.pil"/>
-        <import addon="script.module.six"/>
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.pil" />
+        <import addon="script.module.six" />
     </requires>
 
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>executable video</provides>
     </extension>
 
-    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.service" library="service.py" />
 
     <extension point="kodi.context.item">
         <menu id="kodi.core.main">
@@ -296,16 +296,16 @@
 
 <addon id="plugin.program.opendevtools" name="OpenDevTools" version="1.6.0" provider-name="drinfernoo">
 	<requires>
-		<import addon="script.module.dateutil"/>
-		<import addon="script.module.pil"/>
-		<import addon="script.module.pyqrcode"/>
-		<import addon="script.module.requests"/>
+		<import addon="script.module.dateutil" />
+		<import addon="script.module.pil" />
+		<import addon="script.module.pyqrcode" />
+		<import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<language/>
+		<language />
 		<summary lang="en">Ease of access for Devs and Testers</summary>
 		<description lang="en">Provides ease of access tools for Devs and Testers</description>
 		<platform>all</platform>
@@ -379,12 +379,12 @@
 
 <addon id="plugin.program.slam19wizard" name="Slam 19 Wizard" version="1.0.5" provider-name="Slam, BYB">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="xbmc.python" version="3.0.0" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>executable</provides>
 	</extension>
-	<extension point="xbmc.service" library="service.py"/>
+	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Simple 19 Wizard is a lightweight template for installing builds on Kodi 19 Matrix. Has some code from Aftermath Wizard by Surfacingx. Skin Switch by OpenELEQ. Base code by BYB. Credits to them and all others who contributed. Please report any bugs to @slamious on Telegram/Twitter.</summary>
 		<description lang="en_GB">Kodi 19 Wizard</description>
@@ -392,10 +392,10 @@
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-2.0-or-later</license>
-		<forum/>
-		<website/>
-		<email/>
-		<source/>
+		<forum />
+		<website />
+		<email />
+		<source />
 		<news>1.0.5 - Bugfixes. 1.0.3 - Added download progress to build install. 1.0.2 - Added option to encode the buildfile variable to a base64 string. 1.0.1 - Added the option to use json for build file. 1.0.0 - Basic clean up. Ready for official release. 0.0.9 - Added Save Menu, 0.0.8 - Bug fixes, 0.0.7 - Added Advanced Settings presets to Maintenance. 0.0.6 - Added Clear Packages, the first of the Maintenance section.
 0.0.5 - Bug fixes
 0.0.4 - Added enabling of disabled addons on build first run. Added update repos on build first run.
@@ -405,17 +405,17 @@
 		<assets>
 				<icon>resources/icon.png</icon>
 				<fanart>resources/fanart.jpg</fanart>
-				<banner/>
-				<clearlogo/>
-				<screenshot/>
+				<banner />
+				<clearlogo />
+				<screenshot />
 		</assets>
 	</extension>
 </addon>
 
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.59" provider-name="spoyser">
   <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.metahandler" optional="true"/>
+    <import addon="xbmc.python" version="2.14.0" />
+    <import addon="script.module.metahandler" optional="true" />
   </requires>
 
 
@@ -424,7 +424,7 @@
   </extension>
 
 
-  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.service" library="service.py" start="startup" />
 
 
   <extension point="xbmc.addon.metadata">
@@ -434,7 +434,7 @@
     <language>en</language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-    <website/>
+    <website />
     <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
     <email>seanpoyser at gmail.com</email>
 
@@ -471,13 +471,13 @@
 
 <addon id="plugin.video.a4kstreaming" name="a4kStreaming" version="1.28.0" provider-name="Unknown">
     <requires>
-      <import addon="script.module.requests"/>
-      <import addon="script.module.beautifulsoup4"/>
+      <import addon="script.module.requests" />
+      <import addon="script.module.beautifulsoup4" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
       <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="main_service.py"/>
+    <extension point="xbmc.service" library="main_service.py" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">a4kStreaming - IMDb-based media browser</summary>
         <description>
@@ -740,11 +740,11 @@ Designed for low-end devices and Estuary skin.
 
 <addon id="plugin.video.bolly2tolly" name="Bolly 2 tolly" version="0.1" provider-name="mbebe">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.3.3"/>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.six"/>
-		<import addon="script.module.resolveurl" version="5.0.00"/>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.inputstreamhelper" version="0.3.3" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.six" />
+		<import addon="script.module.resolveurl" version="5.0.00" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="main.py">
 		<provides>video</provides>
@@ -766,10 +766,10 @@ Designed for low-end devices and Estuary skin.
 
 <addon id="plugin.video.botallen.hotstar" name="Disney+ Hotstar" provider-name="botallen" version="0.0.29">
     <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.codequick" version="0.9.10"/>
-        <import addon="script.module.inputstreamhelper" version="0.4.5"/>
-        <import addon="repository.botallen" version="1.0.0"/>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="script.module.codequick" version="0.9.10" />
+        <import addon="script.module.inputstreamhelper" version="0.4.5" />
+        <import addon="repository.botallen" version="1.0.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
@@ -797,26 +797,26 @@ Designed for low-end devices and Estuary skin.
 
 <addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.38+matrix.1" provider-name="SylvainCecchetto,wwark,joaopa">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.codequick" version="0.9.13"/>
-    <import addon="script.module.youtube.dl" version="18.225.0"/>
-    <import addon="script.module.requests" version="2.12.4"/>
-    <import addon="script.module.pytz" version="2014.2"/>
-    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
-    <import addon="script.module.six" version="1.11.0"/>
-    <import addon="script.module.pyqrcode" version="0.0.1"/>
-    <import addon="script.module.tzlocal" version="2.0.0"/>
-    <import addon="script.module.future" version="0.17.1"/>
-    <import addon="script.module.kodi-six" version="0.0.4"/>
-    <import addon="resource.images.catchuptvandmore" version="1.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.codequick" version="0.9.13" />
+    <import addon="script.module.youtube.dl" version="18.225.0" />
+    <import addon="script.module.requests" version="2.12.4" />
+    <import addon="script.module.pytz" version="2014.2" />
+    <import addon="script.module.inputstreamhelper" version="0.3.3" />
+    <import addon="script.module.six" version="1.11.0" />
+    <import addon="script.module.pyqrcode" version="0.0.1" />
+    <import addon="script.module.tzlocal" version="2.0.0" />
+    <import addon="script.module.future" version="0.17.1" />
+    <import addon="script.module.kodi-six" version="0.0.4" />
+    <import addon="resource.images.catchuptvandmore" version="1.0.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
   </extension>
-  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.service" library="service.py" />
   <extension point="xbmc.addon.metadata">
-    <!-- Set reuselanguageinvoker to false while developing the addon, making it only true for the production version -->
-    <!-- See https://kodi.wiki/view/Addon.xml#.3Creuselanguageinvoker.3E -->
+    
+    
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="fr_FR">Catch-Up TV &amp; More : Replay TV, Live TV et bien plus encore.</summary>
     <description lang="fr_FR">Catch-Up TV &amp; More regroupe dans un meme plugin Kodi l'ensemble des videos des differents services et chaines de Replay TV (rattrapage TV) ainsi que l'acces au direct. De plus, cette extension vous permet d'acceder rapidement aux videos et contenus proposes par certains sites internet.</description>
@@ -830,7 +830,7 @@ Designed for low-end devices and Estuary skin.
     <description lang="nl_NL">Catch-Up TV &amp; More brengt replay en live tv van verschikkende diensten en kanalen samen in een Kodi add-on. Bovendien stelt deze add-on u instaat video's van bepaalde websites makkelijk te benaderen.</description>
     <disclaimer lang="nl_NL">Bug meldingen, suggesties ter verbetering of additionele inhouden zijn welkom! Via GitHub of e-mail.</disclaimer>
 
-    <language/>
+    <language />
     <platform>all</platform>
     <license>GPL-2.0</license>
     <forum>https://forum.kodi.tv/showthread.php?tid=307107</forum>
@@ -856,10 +856,10 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
 
 <addon id="plugin.video.daddylive" name="Daddylive" version="4.93" provider-name="JP">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.inputstreamhelper"/>
-        <import addon="script.module.six"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
@@ -875,7 +875,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
         <language>pl</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website/>
+        <website />
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -885,31 +885,31 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
 
 <addon id="plugin.video.distrotv" name="DistroTv Addon" version="1.0.1" provider-name="TonyH">
     <requires>
-        <import addon="xbmc.python" version="2.19.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="script.module.addon.common" version="2.0.0"/>
-        <import addon="script.module.xmltodict" version="0.9.0"/>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]"/>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">DistroTv Addon</summary>
         <description lang="en">Live and Vod content from DistroTv</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <platform>all</platform>
-        <website/>
-        <video_guide/>
+        <website />
+        <video_guide />
         <reuselanguageinvoker>false</reuselanguageinvoker>
     </extension>
 </addon>
 
 <addon id="plugin.video.einthusan3" name="Einthusan" version="3.0.11" provider-name="EinTamil">
     <requires>
-        <!-- <import addon="repository.eintamil" version="1.0.0"/> -->
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.22.0"/>
+        
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.22.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -927,7 +927,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
 
 <addon id="plugin.video.freelivetv.tva" name="Free Live TV" provider-name="mhancoc7" version="0.7.1">
     <requires>
-        <import addon="script.module.m7lib" version="0.1.0"/>
+        <import addon="script.module.m7lib" version="0.1.0" />
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
@@ -948,12 +948,12 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
 
 <addon id="plugin.video.gratis" name="Gratis" version="1.4.5" provider-name="X">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.resolveurl"/>
-		<import addon="script.module.beautifulsoup4"/>
-		<import addon="inputstream.adaptive"/>
-		<import addon="plugin.video.youtube"/>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="inputstream.adaptive" />
+		<import addon="plugin.video.youtube" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -963,8 +963,8 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
 		<description lang="en_GB">Merriam-Webster definition of GRATIS: without charge or recompense : FREE!!!</description>
 		<platform>all</platform>
 		<license>GPL-3.0-or-later</license>
-		<website/>
-		<source/>
+		<website />
+		<source />
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -974,14 +974,14 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
 
 <addon id="plugin.video.iptv.archive.downloader" version="0.8.3" name="IPTV Archive Downloader" provider-name="tbrek">
   <requires>
-    <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-    <import addon="xbmc.gui" version="5.16.0"/>
-    <import addon="script.module.xbmcswift2"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.chardet"/>
-    <import addon="script.module.pytz"/>
-    <import addon="script.module.dateutil"/>
-    <import addon="script.module.kodi-six"/>
+    
+    <import addon="xbmc.gui" version="5.16.0" />
+    <import addon="script.module.xbmcswift2" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.chardet" />
+    <import addon="script.module.pytz" />
+    <import addon="script.module.dateutil" />
+    <import addon="script.module.kodi-six" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
     <provides>video</provides>
@@ -1005,7 +1005,7 @@ See https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/releas
       </item>
     </menu>
   </extension>
-  <extension point="xbmc.service" library="server.py" start="login"/>
+  <extension point="xbmc.service" library="server.py" start="login" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Download from IPTV Simple Client with ffmpeg.</summary>
     <summary lang="pl">Pobierz audycje z IPTV Simple Client uzywajac ffmpeg.</summary>
@@ -1027,7 +1027,7 @@ niektorzy dostawcy IPTV przerywaja transmisje z archiwum po 1h.
     <disclaimer lang="en">Make sure recording streams is legal in your country.</disclaimer>
     <disclaimer lang="pl">Upewnij sie, ze nagrywanie TV jest legalne w Twoim kraju.</disclaimer>
     <source>https://github.com/tbrek/IPTV-Archive-Downloader</source>
-    <forum/>
+    <forum />
     <news>
 version 0.7.1
 
@@ -1110,14 +1110,14 @@ Initial version.
 
 <addon id="plugin.video.jetproxy" version="1.0.3" name="JetProxy" provider-name="t4ils">
 <requires>
-  <import addon="xbmc.python" version="3.0.0"/>
-  <import addon="script.module.routing"/>
-  <import addon="script.module.requests"/>
+  <import addon="xbmc.python" version="3.0.0" />
+  <import addon="script.module.routing" />
+  <import addon="script.module.requests" />
 </requires>
 <extension point="xbmc.python.pluginsource" library="main.py">
   <provides>executable</provides>
 </extension>
-<extension point="xbmc.service" library="service.py"/>
+<extension point="xbmc.service" library="service.py" />
 <extension point="xbmc.addon.metadata">
   <summary lang="en">JetProxy</summary>
   <description lang="en_GB">JetProxy</description>
@@ -1130,10 +1130,10 @@ Initial version.
 
 <addon id="plugin.video.json_iptv" version="1.0.09" name="Json IPTV" provider-name="JewBMX">
     <requires>
-        <import addon="script.module.six"/>
-        <import addon="script.module.kodi-six"/>
-        <import addon="script.module.simplejson"/>
-        <import addon="script.module.requests"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.requests" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -1153,18 +1153,18 @@ Initial version.
 
 <addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.8">
   <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.requests" version="2.19.1"/>
-    <import addon="script.module.beautifulsoup4" version="4.5.3"/>
-    <import addon="script.common.plugin.cache" version="2.5.5"/>
-    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.requests" version="2.19.1" />
+    <import addon="script.module.beautifulsoup4" version="4.5.3" />
+    <import addon="script.common.plugin.cache" version="2.5.5" />
+    <import addon="script.module.inputstreamhelper" version="0.3.3" />
   </requires>
   <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
   </extension>
-  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.service" library="service.py" />
   <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>false</reuselanguageinvoker> <!-- You can enable this if you want, expect some instability but much faster menu speeds -->
+    <reuselanguageinvoker>false</reuselanguageinvoker> 
     <summary lang="en">kaito video plugin</summary>
     <description lang="en">HD Animes</description>
     <platform>all</platform>
@@ -1225,23 +1225,23 @@ Initial release
 
 <addon id="plugin.video.live.streamspro" name="LiveStreamsPro" version="2.9.5" provider-name="Shani">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.httplib2"/>
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true"/>
-    <import addon="script.module.dateutil" optional="true"/>
-    <import addon="script.module.resolveurl" optional="true"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.cloudscraper" optional="true"/>
-    <import addon="script.module.inputstreamhelper" optional="true"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.slproxy" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.1" />
+    <import addon="script.module.simple.downloader" version="0.9.4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true" />
+    <import addon="script.module.youtube.dl" optional="true" />
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.dateutil" optional="true" />
+    <import addon="script.module.resolveurl" optional="true" />
+    <import addon="script.module.urlresolver" optional="true" />
+    <import addon="script.module.cloudscraper" optional="true" />
+    <import addon="script.module.inputstreamhelper" optional="true" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true" />
+    <import addon="script.module.slproxy" optional="true" />
+    <import addon="script.module.pyamf" optional="true" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -1271,13 +1271,13 @@ Initial release
 
 <addon id="plugin.video.MXPlayer" name="MXPlayer" version="1.0.5" provider-name="Ajay K">
     <requires>
-			<import addon="script.module.six"/>
-			<import addon="script.module.kodi-six"/>
-			<import addon="script.module.routing" version="0.2.0"/>
-			<import addon="script.module.requests" version="2.7.0"/>
-			<import addon="script.common.plugin.cache" version="2.5.5"/>
-			<import addon="script.module.resolveurl" version="5.1.0"/>
-			<import addon="script.module.web-pdb"/>
+			<import addon="script.module.six" />
+			<import addon="script.module.kodi-six" />
+			<import addon="script.module.routing" version="0.2.0" />
+			<import addon="script.module.requests" version="2.7.0" />
+			<import addon="script.common.plugin.cache" version="2.5.5" />
+			<import addon="script.module.resolveurl" version="5.1.0" />
+			<import addon="script.module.web-pdb" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -1303,43 +1303,43 @@ Initial release
 
 <addon id="plugin.video.pluto2tv" name="Pluto Tv Addon" version="1.0.0" provider-name="TonyH">
     <requires>
-        <import addon="xbmc.python" version="2.19.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="script.module.addon.common" version="2.0.0"/>
-        <import addon="script.module.xmltodict" version="0.9.0"/>
-		<import addon="script.module.dateutil"/>
-		<import addon="script.module.uepg"/>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+		<import addon="script.module.dateutil" />
+		<import addon="script.module.uepg" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]"/>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Pluto Tv Addon</summary>
         <description lang="en">Live, Vod, and 24/7 content from Pluto TV</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <platform>all</platform>
-        <website/>
-        <video_guide/>
+        <website />
+        <video_guide />
         <reuselanguageinvoker>false</reuselanguageinvoker>
     </extension>
 </addon>
 
 <addon id="plugin.video.plutotv" version="1.6.0" name="Pluto TV" provider-name="Lunatixz">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.six" version="1.0.0"/>
-        <import addon="script.module.kodi-six" version="0.1.3.1"/>
-        <import addon="script.module.requests" version="2.7.0"/>
-        <import addon="script.module.simplecache" version="1.0.0"/>
-        <import addon="script.module.routing" version="0.2.3"/>
-        <import addon="script.module.inputstreamhelper" version="0.3.3"/>
-        <import addon="service.iptv.manager" version="0.2.2" optional="true"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.six" version="1.0.0" />
+        <import addon="script.module.kodi-six" version="0.1.3.1" />
+        <import addon="script.module.requests" version="2.7.0" />
+        <import addon="script.module.simplecache" version="1.0.0" />
+        <import addon="script.module.routing" version="0.2.3" />
+        <import addon="script.module.inputstreamhelper" version="0.3.3" />
+        <import addon="service.iptv.manager" version="0.2.2" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="pseudotv_recommended.py"/>
+    <extension point="xbmc.service" library="pseudotv_recommended.py" />
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <platform>all</platform>
@@ -1365,14 +1365,14 @@ Initial release
 
 <addon id="plugin.video.pov" version="2.17.0" name="POV" provider-name="kodifitzwell">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/pov.py">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="resources/lib/service.py"/>
-    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.service" library="resources/lib/service.py" />
+    <extension point="xbmc.python.module" library="resources/lib/" />
     <extension point="kodi.context.item">
         <menu id="kodi.core.main">
             <item library="resources/contextmenu/refresh_widgets.py">
@@ -1437,9 +1437,9 @@ Initial release
 
 <addon id="plugin.video.qcontinuum" name="Q Continuum" provider-name="Ezzer-man,Narcacist,cMaN, Stuart, DeLancie" version="0.0.1">
     <requires>
-	    <import addon="script.module.six" version="0.0.1"/>
-		<import addon="script.module.requests"/>
-        <import addon="script.module.resolveurl"/>
+	    <import addon="script.module.six" version="0.0.1" />
+		<import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" />
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
@@ -1450,9 +1450,9 @@ Initial release
         <description lang="en">The Q Continuum is an extra-dimensional plane of existence inhabited by a race of beings known as the Q</description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum/>
-        <website/>
-        <source/>
+        <forum />
+        <website />
+        <source />
         <disclaimer lang="en">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
         <assets>
             <icon>icon.png</icon>
@@ -1466,20 +1466,20 @@ Initial release
 
 <addon id="plugin.video.scrubsv2" version="5.1.42" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
-        <import addon="script.module.six"/>
-        <import addon="script.module.kodi-six"/>
-        <import addon="script.module.simplejson"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.resolveurl"/>
-        <import addon="script.scrubsv2.artwork" optional="true"/>
-        <import addon="script.trakt" optional="true"/>
-        <import addon="plugin.video.json_iptv" optional="true"/>
-        <import addon="plugin.video.youtube" optional="true"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.scrubsv2.artwork" optional="true" />
+        <import addon="script.trakt" optional="true" />
+        <import addon="plugin.video.json_iptv" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
-    <extension library="service.py" point="xbmc.service" start="startup"/>
+    <extension library="service.py" point="xbmc.service" start="startup" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">A Clean Source To Dirty Things...</summary>
         <description lang="en">Movies, Tv Shows, Anime, and What Not. [CR] See Changelog For Changes. [CR] You enable/disable the ones you dont like and let me handle the broken providers. [CR] How it should be :)</description>
@@ -1496,14 +1496,14 @@ Initial release
 
 <addon id="plugin.video.sendtokodi" name="SendToKodi" version="0.9.551" provider-name="firsttris">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.inputstreamhelper" version="0.4.2"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.inputstreamhelper" version="0.4.2" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
       <provides>video</provides>
   </extension>
 
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">SendToKodi</summary>
     <description lang="en">SendToKodi</description>
@@ -1542,11 +1542,11 @@ Initial release
 
 <addon id="plugin.video.sonyliv" version="2.0.15" name="SonyLIV" provider-name="Ajay K">
 <requires>
-	<import addon="script.module.six"/>
-	<import addon="script.module.kodi-six"/>
-	<import addon="script.module.requests" version="2.4.3"/>
-	<import addon="script.common.plugin.cache" version="2.5.5"/>
-	<import addon="script.module.web-pdb"/>
+	<import addon="script.module.six" />
+	<import addon="script.module.kodi-six" />
+	<import addon="script.module.requests" version="2.4.3" />
+	<import addon="script.common.plugin.cache" version="2.5.5" />
+	<import addon="script.module.web-pdb" />
 </requires>
 <extension point="xbmc.python.pluginsource" library="main.py">
 	<provides>video</provides>
@@ -1571,9 +1571,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.streamlive.to" name="[COLOR white]Stream[COLOR lime][/COLOR]Live[/COLOR].[COLOR lime]to[/COLOR]" version="3.0.0" provider-name="[COLOR tan]StreamLive.to[/COLOR] Team">
   <requires>
-  	<import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="1.1.0"/>
-	<import addon="script.common.plugin.cache" version="2.6.1.1"/>
+  	<import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="1.1.0" />
+	<import addon="script.common.plugin.cache" version="2.6.1.1" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="liLiveTo.py">
   	<provides>video</provides>
@@ -1596,30 +1596,30 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.11.09">
     <requires>
-        <!--<import addon="xbmc.python" version="2.20.0" />-->
-        <!--<import addon="script.theoath.metadata" />-->
-        <import addon="script.theoath.artwork"/>
-        <import addon="script.module.resolveurl"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.oathscrapers"/>
-        <import addon="script.module.six"/>
-        <import addon="script.module.kodi-six"/>
-        <import addon="script.module.simplejson"/>
-        <import addon="plugin.video.youtube" optional="true"/>
+        
+        
+        <import addon="script.theoath.artwork" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.oathscrapers" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="plugin.video.youtube" optional="true" />
     </requires>
     <extension library="theoath.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
     </extension>
-    <extension library="service.py" point="xbmc.service" start="startup"/>
+    <extension library="service.py" point="xbmc.service" start="startup" />
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <summary lang="en_GB">TheOath</summary>
         <description lang="en_GB">Multi-source add-on</description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum/>
-        <website/>
-        <source/>
+        <forum />
+        <website />
+        <source />
         <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk![CR]This project uses the TMDb, Trakt, Fanart.tv APIs, but is not affiliated nor endorsed by any of their respective ogranisations.[CR]Please support these ogranisations however you can.</disclaimer>
         <assets>
             <icon>icon.png</icon>
@@ -1633,9 +1633,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.thetvapp" name="The TVapp" version="0.11" provider-name="xxxxxx">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.six"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -1656,7 +1656,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.tubi.m7" name="Tubi" provider-name="mhancoc7" version="0.2.0">
     <requires>
-        <import addon="script.module.m7lib" version="0.1.0"/>
+        <import addon="script.module.m7lib" version="0.1.0" />
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
@@ -1677,16 +1677,16 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.tubitv" name="TubiTV" version="5.0.4" provider-name="Lunatixz,WonkoDerp,Liqianyu">
   <requires>
-    <import addon="xbmc.python" version="3.0.1"/>
-    <import addon="script.module.t1mlib" version="4.0.2"/>
-    <import addon="script.module.requests" version="2.22.0"/>
-    <import addon="inputstream.adaptive" version="2.6.0"/>
-    <import addon="script.module.kodi-six" version="0.1.3.1"/>
+    <import addon="xbmc.python" version="3.0.1" />
+    <import addon="script.module.t1mlib" version="4.0.2" />
+    <import addon="script.module.requests" version="2.22.0" />
+    <import addon="inputstream.adaptive" version="2.6.0" />
+    <import addon="script.module.kodi-six" version="0.1.3.1" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
-  <extension point="xbmc.service" library="pseudotv_recommended.py"/>
+  <extension point="xbmc.service" library="pseudotv_recommended.py" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">tubitv</summary>
     <description lang="en_GB">Tubi TV has the largest library of FREE videos of hit and cult TV shows and films</description>
@@ -1706,13 +1706,13 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.tvone" name="tvOne" version="1.0.2" provider-name="RACC">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.pycryptodome"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.peewee"/>
-    <import addon="script.module.kodi-six"/>
-    <import addon="script.module.future"/>
-    <import addon="script.module.routing"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.pycryptodome" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.peewee" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.future" />
+    <import addon="script.module.routing" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -1721,7 +1721,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en_gb">TvTap</summary>
     <description lang="en_gb">tvOne aka TvTap[CR]Updated August 2023</description>
-    <disclaimer lang="en_gb"/>
+    <disclaimer lang="en_gb" />
     <platform>all</platform>
     <license>GPL-3.0</license>
     <assets>
@@ -1733,14 +1733,14 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.tvone111" name="tvOne111" version="1.0.2" provider-name="RACC">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.pycryptodome"/>
-    <import addon="script.module.pyamf"/>
-    <import addon="script.module.peewee"/>
-    <import addon="script.module.kodi-six"/>
-    <import addon="script.module.future"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.routing"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.pycryptodome" />
+    <import addon="script.module.pyamf" />
+    <import addon="script.module.peewee" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -1749,7 +1749,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en_gb">RedBox TV</summary>
     <description lang="en_gb">tvOne111 aka RedBox TV Live[CR]Updated 2024</description>
-    <disclaimer lang="en_gb"/>
+    <disclaimer lang="en_gb" />
     <platform>all</platform>
     <license>GPL-3.0-only</license>
     <assets>
@@ -1761,15 +1761,15 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.tvone1112" name="tvOne1112" version="1.0.2" provider-name="RACC">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.pycryptodome"/>
-    <import addon="script.module.dateutil"/>
-    <import addon="script.module.pyamf"/>
-    <import addon="script.module.peewee"/>
-    <import addon="script.module.kodi-six"/>
-    <import addon="script.module.future"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.routing"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.pycryptodome" />
+    <import addon="script.module.dateutil" />
+    <import addon="script.module.pyamf" />
+    <import addon="script.module.peewee" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -1778,14 +1778,14 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en_gb">LiveNet TV</summary>
     <description lang="en_gb">tvOne1112 aka LiveNet TV[CR]Updated 2021</description>
-    <disclaimer lang="en_gb"/>
-    <language/>
+    <disclaimer lang="en_gb" />
+    <language />
     <platform>all</platform>
     <license>GPL-3.0-only</license>
-    <forum/>
-    <website/>
-    <email/>
-    <source/>
+    <forum />
+    <website />
+    <email />
+    <source />
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
@@ -1795,14 +1795,14 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.tvone112" name="tvOne112" version="1.0.1" provider-name="RACC">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.pycryptodome"/>
-    <import addon="script.module.pyamf"/>
-    <import addon="script.module.peewee"/>
-    <import addon="script.module.kodi-six"/>
-    <import addon="script.module.future"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.routing"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.pycryptodome" />
+    <import addon="script.module.pyamf" />
+    <import addon="script.module.peewee" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -1811,7 +1811,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en_gb">RStv</summary>
     <description lang="en_gb">tvOne112 aka RStv[CR]Updated July 2023</description>
-    <disclaimer lang="en_gb"/>
+    <disclaimer lang="en_gb" />
     <platform>all</platform>
     <license>GPL-3.0-only</license>
     <assets>
@@ -1823,9 +1823,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.tvseriesvideo" name="TVseries.video" version="0.3" provider-name="mbebe">
     <requires>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.resolveurl" version="5.0.00"/>
-        <import addon="script.module.six"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" version="5.0.00" />
+        <import addon="script.module.six" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -1847,9 +1847,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.ustvgo" version="1.0.8" name="USTVGO" provider-name="Parrot Developers">
 <requires>
-  <import addon="xbmc.python" version="3.0.0"/>
-  <import addon="script.module.requests" version="2.25.1"/>
-  <import addon="inputstream.adaptive" version="2.3.13"/>
+  <import addon="xbmc.python" version="3.0.0" />
+  <import addon="script.module.requests" version="2.25.1" />
+  <import addon="inputstream.adaptive" version="2.3.13" />
 </requires>
 <extension point="xbmc.python.pluginsource" library="addon.py">
   <provides>video</provides>
@@ -1877,11 +1877,11 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.voot" version="2.0.9" name="Voot" provider-name="Ajay K">
 <requires>
-	<import addon="script.module.six"/>
-	<import addon="script.module.kodi-six"/>
-	<import addon="script.module.requests" version="2.4.3"/>
-	<import addon="script.common.plugin.cache" version="2.5.5"/>
-	<import addon="script.module.web-pdb"/>
+	<import addon="script.module.six" />
+	<import addon="script.module.kodi-six" />
+	<import addon="script.module.requests" version="2.4.3" />
+	<import addon="script.common.plugin.cache" version="2.5.5" />
+	<import addon="script.module.web-pdb" />
 </requires>
 <extension point="xbmc.python.pluginsource" library="default.py">
 	<provides>video</provides>
@@ -1904,9 +1904,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.youngkbell.hotstar" name="HotStar" version="2.0.0" provider-name="Young K Bell">
     <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.routing" version="0.2.0"/>
-        <import addon="script.module.requests" version="2.7.0"/>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="script.module.routing" version="0.2.0" />
+        <import addon="script.module.requests" version="2.7.0" />
     </requires>
 
     <extension point="xbmc.python.pluginsource" library="main.py">
@@ -1915,15 +1915,15 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Hotstar is India's largest premium streaming platform with more than 100,000 hours of drama &amp; movies in 17 languages, &amp; coverage of every major global sporting event. The app created a global record for the maximum numbers of simultaneous viewers for an online event during Vivo IPL 2018.</summary>
         <description lang="en_GB">Hotstar is India's largest premium streaming platform with more than 100,000 hours of drama &amp; movies in 17 languages, &amp; coverage of every major global sporting event. The app created a global record for the maximum numbers of simultaneous viewers for an online event during Vivo IPL 2018.</description>
-        <language/>
+        <language />
         <platform>all</platform>
         <license>GPL-3.0</license>
-        <forum/>
-        <website/>
-        <email/>
-        <source/>
-        <news/>
-        <disclaimer/>
+        <forum />
+        <website />
+        <email />
+        <source />
+        <news />
+        <disclaimer />
         <assets>
             <icon>resources/icon_hotstar.jpeg</icon>
             <fanart>resources/fanart_hotstar.jpg</fanart>
@@ -1933,9 +1933,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.youngkbell.zee5" name="Zee 5" version="2.0.5" provider-name="Young K Bell">
     <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.routing" version="0.2.0"/>
-        <import addon="script.module.requests" version="2.7.0"/>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="script.module.routing" version="0.2.0" />
+        <import addon="script.module.requests" version="2.7.0" />
 
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
@@ -1946,15 +1946,15 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
         <description lang="en_GB">
             At ZEE5, we believe that for entertainment to come alive, you need to feel it! With 12 Navigational, Featured languages across TV Shows, Movies, Original Web Series, International Shows, Acclaimed Plays and much more. Enjoy unlimited entertainment with 80+ LIVE TV channels and 100,000+ hours of video content in the language of your comfort for an experience that feels like home.
         </description>
-        <language/>
+        <language />
         <platform>all</platform>
         <license>GPL-3.0</license>
-        <forum/>
-        <website/>
-        <email/>
-        <source/>
-        <news/>
-        <disclaimer/>
+        <forum />
+        <website />
+        <email />
+        <source />
+        <news />
+        <disclaimer />
         <assets>
             <icon>resources/icon_zee5.jpg</icon>
             <fanart>resources/fanart_zee5.jpg</fanart>
@@ -1964,13 +1964,13 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="plugin.video.zee5" name="Zee 5" version="2.1.20" provider-name="Ajay K">
     <requires>
-		<import addon="script.module.six"/>
-		<import addon="script.module.kodi-six"/>
-		<import addon="script.module.routing" version="0.2.0"/>
-		<import addon="script.module.requests" version="2.7.0"/>
-		<import addon="script.common.plugin.cache" version="2.5.5"/>
-        <import addon="script.module.inputstreamhelper" version="0.5.2"/>
-		<import addon="script.module.web-pdb"/>
+		<import addon="script.module.six" />
+		<import addon="script.module.kodi-six" />
+		<import addon="script.module.routing" version="0.2.0" />
+		<import addon="script.module.requests" version="2.7.0" />
+		<import addon="script.common.plugin.cache" version="2.5.5" />
+        <import addon="script.module.inputstreamhelper" version="0.5.2" />
+		<import addon="script.module.web-pdb" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -1980,15 +1980,15 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
         <description lang="en_GB">
             At ZEE5, we believe that for entertainment to come alive, you need to feel it! With 12 Navigational, Featured languages across TV Shows, Movies, Original Web Series, International Shows, Acclaimed Plays and much more. Enjoy unlimited entertainment with 80+ LIVE TV channels and 100,000+ hours of video content in the language of your comfort for an experience that feels like home.
         </description>
-        <language/>
+        <language />
         <platform>all</platform>
         <license>GPL-3.0</license>
-        <forum/>
-        <website/>
-        <email/>
-        <source/>
-        <news/>
-        <disclaimer/>
+        <forum />
+        <website />
+        <email />
+        <source />
+        <news />
+        <disclaimer />
         <assets>
             <icon>icon.jpg</icon>
             <fanart>fanart.jpg</fanart>
@@ -1998,9 +1998,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.17" provider-name="SylvainCecchetto,wwark,joaopa">
   <requires>
-    <import addon="kodi.resource" version="1.0.0"/>
+    <import addon="kodi.resource" version="1.0.0" />
   </requires>
-  <extension point="kodi.resource.images" compile="false"/>
+  <extension point="kodi.resource.images" compile="false" />
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en_GB">Channel logos and artwork used in Catch-up TV &amp; More</summary>
@@ -2023,10 +2023,10 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.adzapper" name="LiveTV Ad-Zapper" version="1.0.2" provider-name="pOpY">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="xbmc.python" version="3.0.0" />
 	</requires>
-	<extension point="xbmc.python.script" library="default.py"/>
-	<extension point="xbmc.service" library="service.py"/>
+	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Rezap to current channel after some time (advertisment)</summary>
 		<summary lang="de_DE">Schaltet auf aktuellen Kanal zuruck nach Ablauf einer gewissen Zeit (Werbung)</summary>
@@ -2070,7 +2070,7 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.language-convert" name="Language Convert" version="0.1.3" provider-name="ronie">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="xbmc.python" version="3.0.0" />
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
@@ -2085,12 +2085,12 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.7of9-swiftstreamz" name="7of9 Swift Streamz HD" version="2.2c" provider-name="RACC">
   <requires>
-    <import addon="xbmc.python" version="2.26.0"/>
-    <import addon="script.module.pycryptodome"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.kodi-six"/>
-    <import addon="script.module.future"/>
-    <import addon="script.module.routing"/>
+    <import addon="xbmc.python" version="2.26.0" />
+    <import addon="script.module.pycryptodome" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.future" />
+    <import addon="script.module.routing" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -2099,23 +2099,23 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en_gb">Cloned for 7of9 users from the Racc TvOne add-on. All credit must go to anyone involved in the Original Code</summary>
     <description lang="en_gb">SwiftStreamz IPTV</description>
-    <disclaimer lang="en_gb"/>
-    <language/>
+    <disclaimer lang="en_gb" />
+    <language />
     <platform>all</platform>
     <license>GPL-3.0</license>
-    <forum/>
-    <website/>
-    <email/>
-    <source/>
+    <forum />
+    <website />
+    <email />
+    <source />
   </extension>
 </addon>
 
 <addon id="script.module.backports.zoneinfo" name="zoneinfo" version="0.2.1" provider-name="pganssle">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.tzdata" version="2021.5"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.tzdata" version="2021.5" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">A concrete time zone implementation to support the IANA time zone database</summary>
     <description lang="en_GB">The zoneinfo module provides a concrete time zone implementation to support the IANA time zone database as originally specified in PEP 615.</description>
@@ -2131,9 +2131,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.bottle" name="Bottle" version="0.12.23" provider-name="Marcel Hellkamp">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="kodi.addon.metadata">
     <summary lang="en_GB">Fast and simple WSGI-framework for small web-applications</summary>
     <description lang="en_GB">Bottle is a fast and simple micro-framework for small web applications. It offers request dispatching (Routes) with url parameter support, templates, a built-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines - all in a single file and with no dependencies other than the Python Standard Library.</description>
@@ -2148,12 +2148,12 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.codequick" name="CodeQuick" provider-name="willforde" version="1.0.2+matrix.1">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.youtube.dl" version="19.912.1"/>
-        <import addon="script.module.htmlement" version="1.0.0"/>
-        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.youtube.dl" version="19.912.1" />
+        <import addon="script.module.htmlement" version="1.0.0" />
+        <import addon="script.module.requests" version="2.22.0" />
     </requires>
-    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Framework for creating kodi add-on's.</summary>
         <description lang="en_GB">Codequick is a framework for kodi add-on's. The goal of this framework is to simplify add-on development. This is achieved by reducing the amount of boilerplate code to a minimum, automating tasks like route dispatching and sort method selection. Ultimately allowing the developer to focus primarily on scraping content from websites and passing it to kodi.</description>
@@ -2169,9 +2169,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.defusedxml" name="defusedxml" version="0.6.0+matrix.1" provider-name="Christian Heimes">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="xbmc.python" version="3.0.0" />
 	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">defusedxml -- defusing XML bombs and other exploits</summary>
 		<description lang="en_GB">Packed for KODI from https://github.com/tiran/defusedxml</description>
@@ -2187,29 +2187,29 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.dnspython" name="DNS Python" version="1.12.1" provider-name="dnspython">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
 	<summary>A Pure Python DNS module</summary>
 	<description>A Pure Python DNS module</description>
-	<disclaimer lang="en"/>
+	<disclaimer lang="en" />
 	<language>en</language>
     <platform>all</platform>
 	<license>BSD-style license</license>
-	<forum/>
+	<forum />
 	<website>http://www.dnspython.org/</website>
-	<email/>
+	<email />
 	<source>https://github.com/Arias800/script.module.dnspython/</source>
   </extension>
 </addon>
 
 <addon id="script.module.feedparser" name="feedparser" version="6.0.11" provider-name="Kurt McKee">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.sgmllib3k" version="1.0.0+matrix.1"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.sgmllib3k" version="1.0.0+matrix.1" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</summary>
     <description lang="en_GB">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</description>
@@ -2225,11 +2225,11 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.html5lib" name="html5lib-python" version="1.1.0+matrix.1" provider-name="html5lib">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.six" version="1.14.0+matrix.1" optional="false"/>
-    <import addon="script.module.webencodings" version="0.5.1+matrix.1"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.six" version="1.14.0+matrix.1" optional="false" />
+    <import addon="script.module.webencodings" version="0.5.1+matrix.1" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">Standards-compliant library for parsing and serializing HTML documents and fragments in Python.</summary>
     <description lang="en_GB">html5lib is a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers.</description>
@@ -2245,9 +2245,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.htmlement" name="HTMLement" provider-name="willforde" version="1.0.0+matrix.1">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="xbmc.python" version="3.0.0" />
     </requires>
-    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Pure-Python HTML parser with ElementTree support.</summary>
         <description lang="en_GB">Parses HTML using HTMLParser to build a tree of Elements. Utilizing ElementTree support for XPath expression to parse the tree.</description>
@@ -2263,9 +2263,9 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.httplib2" name="httplib2" provider-name="Joe Gregorio" version="0.17.0+matrix.2">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
-  <extension library="lib" point="xbmc.python.module"/>
+  <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
         <description lang="en_GB">httplib2 module</description>
         <summary lang="en_GB">httplib2 module</summary>
@@ -2281,21 +2281,21 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 
 <addon id="script.module.jetextractors" name="JetExtractors" version="2.1.01" provider-name="THE TEAM">
 	<requires>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.beautifulsoup4"/>
-		<import addon="script.module.dateutil"/>
-		<import addon="script.module.soupsieve"/>
-		<import addon="script.module.pyairtable"/>
-		<import addon="script.module.pyamf"/>
-		<import addon="script.module.pycryptodome" optional="true"/>
-		<import addon="script.module.pyjsparser"/>
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.dateutil" />
+		<import addon="script.module.soupsieve" />
+		<import addon="script.module.pyairtable" />
+		<import addon="script.module.pyamf" />
+		<import addon="script.module.pycryptodome" optional="true" />
+		<import addon="script.module.pyjsparser" />
 	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en">Jet Extractors</summary>
 		<description lang="en">Jet Extractors</description>
-		<disclaimer lang="en"/>
+		<disclaimer lang="en" />
 		<license>MIT</license>
 		<assets>
             <icon>icon.png</icon>
@@ -2304,22 +2304,22 @@ Launched in January 2013, it enables users to discover 20 years of rich content 
 	</extension>
 </addon>
 
-<!-- ########################################### -->
-<!-- #     GIVE CREDIT WHERE CREDIT IS DUE     # -->
-<!-- #                                         # -->
-<!-- #      THE TEAM JETEXTRACTOR              # -->
-<!-- ########################################### -->
+
+
+
+
+
 
 <addon id="script.module.libka" name="Libka Library Module" version="0.0.25" provider-name="libka team">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.urllib3"/>
-		<import addon="script.skin.helper.colorpicker"/>
-		<import addon="script.module.pil"/>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.urllib3" />
+		<import addon="script.skin.helper.colorpicker" />
+		<import addon="script.module.pil" />
 	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
-	<extension point="xbmc.python.library" library="lib/main.py"/>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.library" library="lib/main.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Helper framework for Kodi Addons</summary>
 		<summary lang="pl_PL">Biblioteka dla dodatkow Kodi</summary>
@@ -2343,10 +2343,10 @@ v0.0.14
 
 <addon id="script.module.m3u8" name="m3u8" version="0.5.4+matrix.2" provider-name="Globo.com">
 	<requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.iso8601" version="0.1.12+matrix.1"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.iso8601" version="0.1.12+matrix.1" />
 	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Python m3u8 parser</summary>
 		<description lang="en_GB">Packed for XBMC from https://github.com/globocom/m3u8</description>
@@ -2361,9 +2361,9 @@ v0.0.14
 
 <addon id="script.module.m7lib" name="m7lib" provider-name="mhancoc7" version="1.0.1">
     <requires>
-        <import addon="plugin.video.youtube" version="5.5.1"/>
+        <import addon="plugin.video.youtube" version="5.5.1" />
     </requires>
-    <extension library="lib" point="xbmc.python.module"/>
+    <extension library="lib" point="xbmc.python.module" />
     <extension point="xbmc.addon.metadata">
         <description lan="en">Please support the continued development of m7lib by becoming a Patron [COLOR lightskyblue]https://patreon.m7kodi.dev/[/COLOR]</description>
         <summary lang="en">mhancoc7 Common Functions</summary>
@@ -2374,29 +2374,29 @@ v0.0.14
 
 <addon id="script.module.parsedom" name="Parsedom for xbmc plugins" provider-name="TheCollective" version="2.5.2">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Parsedom for xbmc plugins.</summary>
   </extension>
-  <extension library="lib" point="xbmc.python.module"/>
+  <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
         <license>GPLv3</license>
         <platform>all</platform>
-        <email/>
-        <website/>
+        <email />
+        <website />
         <forum>http://forum.xbmc.org/showthread.php?tid=116498</forum>
         <source>https://github.com/HenrikDK/xbmc-common-plugin-functions</source>
-        <language/>
+        <language />
    </extension>
 </addon>
 
 <addon id="script.module.pil" name="Python Image Library" version="1.1.7" provider-name="PythonWare">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
   </extension>
@@ -2404,10 +2404,10 @@ v0.0.14
 
 <addon id="script.module.pyairtable" name="pyairtable" version="1.4.0">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">Python Client for the Airtable API</summary>
     <description lang="en_GB">Python Client for the Airtable API</description>
@@ -2423,10 +2423,10 @@ v0.0.14
 
 <addon id="script.module.pyamf" name="PyAMF" version="0.8.10+matrix.4" provider-name="The Py3AMF Project">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.defusedxml" version="0.6.0+matrix.1"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.defusedxml" version="0.6.0+matrix.1" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">PyAMF provides Action Message Format (AMF) support for Python that is compatible with the Adobe Flash Player.</summary>
     <description lang="en_GB">The Adobe Integrated Runtime and Adobe Flash Player use AMF to communicate between an application and a remote server. AMF encodes remote procedure calls (RPC) into a compact binary representation that can be transferred over HTTP/HTTPS or the RTMP/RTMPS protocol. Objects and data values are serialized into this binary format, which increases performance, allowing applications to load data up to 10 times faster than with text-based formats such as XML or SOAP.
@@ -2443,9 +2443,9 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.pyhdhr" version="1.0.7" name="pyHDHR" provider-name="Lunatixz">
     <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="xbmc.python" version="2.25.0" />
     </requires>
-    <extension library="lib" point="xbmc.python.module"/>
+    <extension library="lib" point="xbmc.python.module" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">A Python interface for the HDHomeRun JSON API</summary>
         <description lang="en_GB">A Python interface for the HDHomeRun JSON API</description>
@@ -2460,9 +2460,9 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.pytz" name="pytz" version="2023.3.0+matrix.1" provider-name="Stuart Bishop">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">World Timezone Definitions for Python.</summary>
     <description lang="en_GB">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
@@ -2478,11 +2478,11 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.sgmllib3k" name="sgmllib3k" version="1.0.0+matrix.2" provider-name="hsoft">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="xbmc.python" version="3.0.0" />
     </requires>
-    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <language/>
+        <language />
         <summary lang="en_GB">Python 3 port of sgmllib</summary>
         <description lang="en_GB">Python 3 port of sgmllib</description>
         <license>BSD-1-Clause	</license>
@@ -2496,39 +2496,39 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.simple.downloader" name="Simple Downloader for xbmc plugins" provider-name="TheCollective" version="1.9.5">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.common.plugin.cache" version="2.5.0"/>
-    <import addon="script.module.parsedom" version="2.5.1"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.common.plugin.cache" version="2.5.0" />
+    <import addon="script.module.parsedom" version="2.5.1" />
   </requires>
-  <extension library="default.py" point="xbmc.service"/>
+  <extension library="default.py" point="xbmc.service" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Simple downloader for xbmc plugins.</summary>
   </extension>
-  <extension library="lib" point="xbmc.python.module"/>
+  <extension library="lib" point="xbmc.python.module" />
 </addon>
 
 <addon id="script.module.streamlink" name="Streamlink Library" version="1.3.1.11" provider-name="back-to">
   <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.requests" version="2.18.4"/>
-    <import addon="script.module.futures" version="2.2.0"/>
-    <import addon="script.module.singledispatch" version="3.4.0.3"/>
-    <import addon="script.module.six" version="1.9.0"/>
-    <import addon="script.module.iso3166" version="0.8"/>
-    <import addon="script.module.iso639" version="0.4.5"/>
-    <import addon="script.module.shutil_which" version="3.5.1"/>
-    <import addon="script.module.websocket" version="0.47.0"/>
-    <import addon="script.module.isodate" version="0.6.0"/>
-    <import addon="script.module.pysocks" version="1.6.8" optional="true"/>
-    <import addon="script.module.pycryptodome" version="3.4.3"/>
-    <import addon="script.module.shutil_get_terminal_size" version="1.0.0"/>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="script.module.requests" version="2.18.4" />
+    <import addon="script.module.futures" version="2.2.0" />
+    <import addon="script.module.singledispatch" version="3.4.0.3" />
+    <import addon="script.module.six" version="1.9.0" />
+    <import addon="script.module.iso3166" version="0.8" />
+    <import addon="script.module.iso639" version="0.4.5" />
+    <import addon="script.module.shutil_which" version="3.5.1" />
+    <import addon="script.module.websocket" version="0.47.0" />
+    <import addon="script.module.isodate" version="0.6.0" />
+    <import addon="script.module.pysocks" version="1.6.8" optional="true" />
+    <import addon="script.module.pycryptodome" version="3.4.3" />
+    <import addon="script.module.shutil_get_terminal_size" version="1.0.0" />
   </requires>
-  <extension point="xbmc.python.module" library="resources/lib/"/>
+  <extension point="xbmc.python.module" library="resources/lib/" />
   <extension point="xbmc.addon.metadata">
     <summary>Streamlink Library</summary>
     <description>Streamlink repacked for Kodi</description>
-    <language/>
+    <language />
     <platform>all</platform>
     <license>BSD 2-Clause Simplified License</license>
     <website>https://streamlink.github.io</website>
@@ -2576,9 +2576,9 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.t0mm0.common" name="t0mm0's common stuff" version="3.0.0" provider-name="t0mm0">
   <requires>
-	<import addon="script.module.six"/>
+	<import addon="script.module.six" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Collection of commonly used addon routines</summary>
@@ -2588,11 +2588,11 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="4.0.9">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="2.22.0"/>
-    <import addon="inputstream.adaptive" version="2.6.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="2.22.0" />
+    <import addon="inputstream.adaptive" version="2.6.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
         <description lang="en_GB">t1m Library Routines</description>
         <summary lang="en_GB">t1m Library Routines</summary>
@@ -2611,10 +2611,10 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="1.0.4c" provider-name="The Crew">
     <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.beautifulsoup4"/>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="script.module.beautifulsoup4" />
     </requires>
-    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
         <description lang="en">Many come, Many go. The true and dedicated are here.</description>
@@ -2630,9 +2630,9 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.tls_client" name="tls_client" version="1.0.1" provider-name="tls_client">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">Tls-Client is a powerful, user-friendly HTTP client for Python</summary>
     <description lang="en_GB">Tls-Clien is a powerful, user-friendly HTTP client for Python.</description>
@@ -2648,13 +2648,13 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.uepg" version="5.0.3" name="uEPG" provider-name="Lunatixz">
     <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.pyhdhr" version="1.0.0"/>
-        <import addon="script.module.simplecache" version="1.0.0"/>
-        <import addon="script.module.metadatautils" version="1.0.0"/>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="script.module.pyhdhr" version="1.0.0" />
+        <import addon="script.module.simplecache" version="1.0.0" />
+        <import addon="script.module.metadatautils" version="1.0.0" />
     </requires>
-    <extension point="xbmc.python.module" library="/"/>
-    <extension point="xbmc.python.script" library="uepg.py"/>
+    <extension point="xbmc.python.module" library="/" />
+    <extension point="xbmc.python.script" library="uepg.py" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Universal Electronic Programing Guide Framework</summary>
         <description lang="en_GB">uEPG is a drop-in EPG module, developers can easily add custom electronic programing guides to any Kodi plugin with little effort; Developers can use the default interface or customize to match a specific provider.</description>
@@ -2673,29 +2673,11 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
     </extension>
 </addon>
 
-<addon id="script.module.urllib3" name="urllib3" version="2.1.0" provider-name="urllib3">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python</summary>
-    <description lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries</description>
-    <license>MIT</license>
-    <platform>all</platform>
-    <website>https://urllib3.readthedocs.io/</website>
-    <source>https://github.com/urllib3/urllib3</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="script.module.webencodings" name="webencodings" version="0.5.1+matrix.2" provider-name="gsneller">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">This is a Python implementation of the WHATWG Encoding standard.</summary>
     <description lang="en_GB">This module has encoding labels and BOM detection, but the actual implementation for encoders and decoders is Pythons.</description>
@@ -2711,9 +2693,9 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel), enen92" version="19.0.7">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
-  <extension library="lib" point="xbmc.python.module"/>
+  <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <source>https://github.com/XBMC-Addons/script.module.xbmcswift2</source>
@@ -2730,10 +2712,10 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 <addon id="script.module.yt-dlp" name="yt-dlp" version="2023.07.06-1" provider-name="yt-dlp contributors">
 
     <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="xbmc.python" version="3.0.1" />
     </requires>
 
-    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.module" library="lib" />
 
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">A youtube-dl fork with additional features and patches</summary>
@@ -2750,7 +2732,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.settings-convert" name="Settings Convert" version="0.0.12" provider-name="ronie">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="xbmc.python" version="3.0.0" />
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
@@ -2765,10 +2747,10 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.texturemaker" version="0.2.8" name="Texture Maker" provider-name="jurialmunkey">
 <requires>
-  <import addon="xbmc.python" version="3.0.0"/>
-  <import addon="script.module.pil" version="1.1.7"/>
+  <import addon="xbmc.python" version="3.0.0" />
+  <import addon="script.module.pil" version="1.1.7" />
 </requires>
-<extension point="xbmc.python.script" library="script.py"/>
+<extension point="xbmc.python.script" library="script.py" />
 <extension point="xbmc.python.pluginsource" library="plugin.py">
   <provides>image</provides>
 </extension>
@@ -2786,7 +2768,7 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="script.unlock.advancedsettings" name="Unlock Kodi Advanced Settings" version="1.0.3" provider-name="Alex Bratchik">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="xbmc.python" version="3.0.0" />
     </requires>
     <extension point="xbmc.python.script" library="main.py">
         <provides>executable</provides>
@@ -2815,15 +2797,15 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="service.liveproxy" name="LiveProxy" version="1.0.0" provider-name="back-to">
   <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.streamlink" version="1.3.0"/>
-    <import addon="script.module.back-to-plugins" version="2018.7.18" optional="true"/>
-    <import addon="script.module.streamlink-plugins" version="0.0.0" optional="true"/>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="script.module.streamlink" version="1.3.0" />
+    <import addon="script.module.back-to-plugins" version="2018.7.18" optional="true" />
+    <import addon="script.module.streamlink-plugins" version="0.0.0" optional="true" />
   </requires>
-  <extension point="xbmc.service" library="resources/lib/service.py" start="[login|startup]"/>
+  <extension point="xbmc.service" library="resources/lib/service.py" start="[login|startup]" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <language/>
+    <language />
     <summary>LiveProxy</summary>
     <description>LiveProxy for Kodi</description>
     <platform>all</platform>
@@ -2864,47 +2846,47 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 </addon>
 
 <addon id="service.notro" name="notro" version="1.0.2" provider-name="jp">
-    <requires/>
-    <extension point="xbmc.service" library="main.py"/>
+    <requires />
+    <extension point="xbmc.service" library="main.py" />
     <extension point="xbmc.addon.metadata">
         <source>https://github.com/xbmc/notro</source>
         <summary lang="en_GB">Skip intros and outros</summary>
         <description lang="en_GB">The addon creates a database of your shows and stores a custom set skip value to prompt for skipping intros and outros for TV show episodes</description>
         <platform>all</platform>
         <license>GPL-3.0</license>
-        <website/>
-        <email/>
-        <assets/>
+        <website />
+        <email />
+        <assets />
     </extension>
 </addon>
 
 <addon id="service.subskip" name="SubSkip" version="0.0.5" provider-name="drinfernoo">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests"/>
-        <import addon="script.module.pymysql"/>
-		<import addon="script.service.a4ksubtitles" optional="true"/>
+        <import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+        <import addon="script.module.pymysql" />
+		<import addon="script.service.a4ksubtitles" optional="true" />
     </requires>
 
-    <extension point="xbmc.python.script" library="main.py"/>
+    <extension point="xbmc.python.script" library="main.py" />
     <extension point="xbmc.python.pluginsource" library="test.py">
         <provides>executable</provides>
     </extension>
 
-    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.service" library="service.py" start="startup" />
 
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Skip intros for TV Shows.</summary>
-        <description lang="en_GB"/>
-        <language/>
+        <description lang="en_GB" />
+        <language />
         <platform>all</platform>
         <license>Apache-2.0</license>
-        <forum/>
+        <forum />
         <website>https://github.com/drinfernoo</website>
         <email>drinfernoo@yahoo.com</email>
-        <source/>
-        <news/>
-        <disclaimer/>
+        <source />
+        <news />
+        <disclaimer />
         <assets>
             <icon>icon.png</icon>
         </assets>
@@ -2913,23 +2895,23 @@ AMF3, the default serialization for ActionScript 3.0, provides various advantage
 
 <addon id="service.subtitles.addic7ed" name="Addic7ed.com" version="7.1.4" provider-name="gujal">
     <requires>
-        <!-- <import addon="xbmc.python" version="2.24.0"/> -->
-        <import addon="script.module.six"/>
-        <import addon="script.module.kodi-six"/>
-        <import addon="script.module.requests" version="2.4.3"/>
-        <import addon="script.module.beautifulsoup4" version="4.0.0"/>
+        
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" version="2.4.3" />
+        <import addon="script.module.beautifulsoup4" version="4.0.0" />
     </requires>
-    <extension point="xbmc.subtitle.module" library="service.py"/>
+    <extension point="xbmc.subtitle.module" library="service.py" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Get subtitles from Addic7ed.com</summary>
         <description lang="en">Description for Addic7ed to come</description>
-        <disclaimer lang="en"/>
+        <disclaimer lang="en" />
         <platform>all</platform>
-        <language/>
+        <language />
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <forum>http://forum.xbmc.org/showthread.php?tid=184854</forum>
-        <website/>
-        <email/>
+        <website />
+        <email />
         <source>https://github.com/cflannagan/service.subtitles.addic7ed</source>
     </extension>
 </addon>
