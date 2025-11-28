@@ -4,6 +4,7 @@
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
         <import addon="script.module.inputstreamhelper" />
+        <import addon="inputstream.ffmpegdirect" />
         <import addon="script.module.six"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
